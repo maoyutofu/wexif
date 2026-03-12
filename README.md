@@ -13,7 +13,6 @@
 
 ## 依赖要求
 
-- Rust 1.70+
 - doubao-seed-skill（用于 AI 生成 EXIF）
   - 手动下载：访问 [doubao-seed-skill Releases](https://github.com/maoyutofu/doubao-seed-skill/releases) 下载对应平台的版本并放入 PATH 目录
 
@@ -63,8 +62,6 @@ chmod +x wexif
 echo "wexif 已安装到 $INSTALL_DIR/wexif"
 echo "请确保 $INSTALL_DIR 在 PATH 中"
 ```
-
-**注意**：请将 `YOUR_USERNAME` 替换为实际的 GitHub 用户名。
 
 **手动下载**：
 
