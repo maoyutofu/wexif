@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         include:
-          # macOS
+          # macOS - macos-13 retired Dec 2025, cross-compile x86_64 from ARM runner
           - os: macos-latest
             target: x86_64-apple-darwin
             archive: tar.gz
