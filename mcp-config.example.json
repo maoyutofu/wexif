@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "wexif": {
+      "command": "/path/to/wexif",
+      "args": ["--mcp"],
+      "env": {
+        "ARK_API_KEY": "your-ark-api-key-here"
+      }
+    }
+  }
+}
