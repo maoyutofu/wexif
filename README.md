@@ -65,7 +65,7 @@ echo "请确保 $INSTALL_DIR 在 PATH 中"
 
 **手动下载**：
 
-访问 [Releases 页面](https://github.com/YOUR_USERNAME/wexif/releases) 下载对应平台的二进制文件：
+访问 [Releases 页面](https://github.com/maoyutofu/wexif/releases) 下载对应平台的二进制文件：
 
 - macOS Intel: `wexif-x86_64-apple-darwin.tar.gz`
 - macOS Apple Silicon: `wexif-aarch64-apple-darwin.tar.gz`
@@ -132,7 +132,8 @@ wexif --mcp
       "command": "/path/to/wexif",
       "args": ["--mcp"],
       "env": {
-        "ARK_API_KEY": "your-ark-api-key-here"
+        "ARK_API_KEY": "your-ark-api-key-here",
+        "DOUBAO_SEED_ENDPOINT_ID": "doubao-seed-2-0-lite-260215"
       }
     }
   }

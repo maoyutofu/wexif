@@ -4,7 +4,8 @@
       "command": "/path/to/wexif",
       "args": ["--mcp"],
       "env": {
-        "ARK_API_KEY": "your-ark-api-key-here"
+        "ARK_API_KEY": "your-ark-api-key-here",
+        "DOUBAO_SEED_ENDPOINT_ID": "doubao-seed-2-0-lite-260215"
       }
     }
   }

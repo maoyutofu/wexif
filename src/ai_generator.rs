@@ -11,9 +11,15 @@ pub fn generate_exif_with_ai(image_path: &str, output_json: &str) -> Result<()> 
     let ark_api_key = std::env::var("ARK_API_KEY")
         .context("未设置 ARK_API_KEY 环境变量，请在 MCP 配置中设置")?;
 
+    let doubao_seed_endpoint_id = std::env::var("DOUBAO_SEED_ENDPOINT_ID")
+        .context("未设置 DOUBAO_SEED_ENDPOINT_ID 环境变量，请在 MCP 配置中设置")?;
+
+
     let output = Command::new("doubao-seed-skill")
         .arg("--image-url")
         .arg(image_path)
+        .arg("--model")
+        .arg(doubao_seed_endpoint_id)
         .arg("--prompt")
         .arg(prompt_text)
         .arg("--output")
